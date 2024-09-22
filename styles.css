@@ -1,2 +1,20 @@
+/* This will set the holder to be a flex container */
+.holder {
+  display: flex;
+  justify-content: space-between; /* Ensures the items have space between them */
+  flex-wrap: wrap; /* Ensures items move to the next row if there's not enough space */
+  padding: 0 20px; /* Adds padding on the sides so the first and last items don't touch the edge */
+  width: 100%;
+}
 
-/* Your CSS Code here. */
+/* Each item will be treated as a flex item */
+.item {
+  color: black; /* Text color */
+  font-size: 2em;
+  text-align: center;
+  flex: 1 0 20%; /* This makes sure the items take up equal space but don't shrink below 20% of the container */
+  margin: 10px; /* Adds margin between the items */
+  padding: 20px;
+  box-sizing: border-box; /* Ensures padding is included in the width */
+  border: 2px solid black; /* Optional border for visibility */
+}
